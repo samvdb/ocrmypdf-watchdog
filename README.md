@@ -1,3 +1,10 @@
+# Important
+
+This fork includes dutch language for tesseract.
+TravisCI is included to further automate docker image building and pushing to dockerhub.
+
+Thanks @jbarlow83 for all the work!
+
 # ocrmypdf-watchdog
 
 This is a simple watchdog for OCRMyPDF (and maybe others). It watches a given folder for new files with definable extensions and runs then ocrmypdf (or another command) to convert files to pdf.

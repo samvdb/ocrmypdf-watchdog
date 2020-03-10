@@ -9,10 +9,10 @@ services:
     environment:
       OCRMYPDF_IN: /in
       OCRMYPDF_OUT: /out
-      WATCHDOG_FREQUENCY: 5
+      WATCHDOG_FREQUENCY: 1
       WATCHDOG_EXTENSIONS: pdf,jpg,jpeg,tif,tiff,png,gif
       OCRMYPDF_BINARY: ocrmypdf
-      OCRMYPDF_PARAMETER: -l eng+fra+deu --rotate-pages --deskew --jobs 4 --output-type pdfa
+      OCRMYPDF_PARAMETER: -l eng+fra+deu+nld --rotate-pages --deskew --jobs 4 --output-type pdfa
     volumes:
-    - /home/bernmic/ocrmypdf/in:/in
-    - /home/bernmic/ocrmypdf/out:/out
+    - ./in:/in
+    - ./out:/out

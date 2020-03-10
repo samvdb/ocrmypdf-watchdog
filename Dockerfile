@@ -5,6 +5,8 @@ WORKDIR $GOPATH/src/ocrmypdf-watchdog/
 RUN go get -d -v
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags '-extldflags "-static"' -o /go/bin/main .
 FROM jbarlow83/ocrmypdf:latest
+# Install Dutch language for tesseract
+RUN apt-get install tesseract-ocr-nld
 COPY --from=builder /go/bin/main /app/
 WORKDIR /app
 VOLUME /in /out
