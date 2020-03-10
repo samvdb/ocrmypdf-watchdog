@@ -1,4 +1,6 @@
-# Important
+[![Build Status](https://travis-ci.com/samvdb/ocrmypdf-watchdog.svg?branch=master)](https://travis-ci.com/samvdb/ocrmypdf-watchdog)
+
+# Important 
 
 This fork includes dutch language for tesseract.
 TravisCI is included to further automate docker image building and pushing to dockerhub.
@@ -19,6 +21,8 @@ The docker-compose creates a container from the image. The first time it has to 
  
  There are 2 volumes: <b>/in</b> and <b>/out</b>
  The docker-compose.yml shows how to use them.
+ 
+    docker push samvdb/ocrmypdf-watchdog:latest
  
  ## Environment
  
