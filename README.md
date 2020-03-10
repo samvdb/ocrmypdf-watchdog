@@ -3,7 +3,7 @@
 This fork includes dutch language for tesseract.
 TravisCI is included to further automate docker image building and pushing to dockerhub.
 
-Thanks @jbarlow83 for all the work!
+Thanks @jbarlow83 and @bernmic for all the work!
 
 # ocrmypdf-watchdog
 
